@@ -19,11 +19,22 @@ body {
 .jumbotron {
   margin: 0;
   padding: 0;
-  height: 400px;
+  height: 200px;
   width: 100%;
 }
 
 .bg-panel {
   margin: 0 auto;
   background-color: #bbf9d4;
+  height: 100%;
+}
+
+img {
+  height: 200px;
+  background-color: gray;
+  float: left;
+
+}
+.tama-form {
+  float: right;
 }
