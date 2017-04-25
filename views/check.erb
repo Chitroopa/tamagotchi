@@ -11,13 +11,13 @@
     <form action="/check">
       <button class="btn btn-default" type="submit" name="check">Check</button>
     </form>
-    <form action="/">
+    <form action="/food">
       <button class="btn btn-default" type="submit" name="food">Food</button>
     </form>
-    <form action="/">
+    <form action="/activity">
       <button class="btn btn-default" type="submit" name="play">Play</button>
     </form>
-    <form action="/">
+    <form action="/sleep">
       <button class="btn btn-default" type="submit" name="sleep">Sleep</button>
     </form>
   </div>
@@ -30,3 +30,8 @@
   <h4>Activity level: <%= @pet.activity_level() %> </h4>
   <h4>Time:<%= @pet.time() %> </h4>
 </div>
+<% if @pet.is_alive?() %>
+  <h5> I am Alive!</h5>
+<% else %>
+  <h5> Bad Daddy :(</h5>
+<% end %>

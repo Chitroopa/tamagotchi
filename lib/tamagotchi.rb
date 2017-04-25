@@ -47,7 +47,23 @@ class Tamagotchi
     difference = Time.new() - @creation_time
     if difference >= 20
       @food = @food - ((difference/20).round)
+      if @food < 0
+        @food = 0
+      end
     end
+    if difference >= 10
+      @activity = @activity - ((difference/10).round)
+      if @activity < 0
+        @activity = 0
+      end
+    end
+    if difference >= 30
+      @sleep = @sleep - ((difference/30).round)
+      if @sleep < 0
+        @sleep = 0
+      end
+    end
+
   end
 
   def feed_pet
@@ -55,6 +71,35 @@ class Tamagotchi
     if self.is_alive?()
       @creation_time = Time.new()
       @food = @food + 1
+      if @food > 10
+        @food = 10
+      end
+    else
+      "Bad Daddy"
+    end
+  end
+
+  def play_with_pet
+    self.time_passes()
+    if self.is_alive?()
+      @creation_time = Time.new()
+      @activity = @activity + 1
+      if @activity > 10
+        @activity = 10
+      end
+    else
+      "Bad Daddy"
+    end
+  end
+
+  def put_to_sleep
+    self.time_passes()
+    if self.is_alive?()
+      @creation_time = Time.new()
+      @sleep = @sleep + 1
+      if @sleep > 10
+        @sleep = 10
+      end
     else
       "Bad Daddy"
     end
