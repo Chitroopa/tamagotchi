@@ -1,21 +1,7 @@
-<div class="well bg-panel">
-  <div class="col-md-5">
-    <img class="pet-pic" src="img/puppy.gif">
+<form action="/play">
+  <div class="form-group">
+    <label for="name">Name your pet</label>
+    <input type="text" name="name" class="form-control" required>
   </div>
-  <div class="col-md-5 tama-form">
-    <form class="tama-form" action="/tamagotchi" method="post">
-      <div class="form-group">
-        <button class="btn btn-default" type="button" name="check">Check</button>
-      </div>
-      <div class="form-group">
-        <button class="btn btn-default" type="button" name="food">Food</button>
-      </div>
-      <div class="form-group">
-        <button class="btn btn-default" type="button" name="play">Play</button>
-      </div>
-      <div class="form-group">
-        <button class="btn btn-default" type="button" name="sleep">Sleep</button>
-      </div>
-    </form>
-  </div>
-</div>
+  <button class="btn btn-default" type="submit">Play</button>
+</form>

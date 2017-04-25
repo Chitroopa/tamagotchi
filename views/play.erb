@@ -1,0 +1,30 @@
+<div class="row well bg-panel">
+  <div class="col-md-6">
+    <img class="pet-pic" src="img/puppy.gif">
+    <hr>
+    <h4> <%= @pet.name() %> </h4>
+  </div>
+
+  <div class="col-md-6 tama-form">
+    <form action="/check">
+      <button class="btn btn-default" type="submit" name="check">Check</button>
+    </form>
+    <form action="/">
+      <button class="btn btn-default" type="submit" name="food">Food</button>
+    </form>
+    <form action="/">
+      <button class="btn btn-default" type="submit" name="play">Play</button>
+    </form>
+    <form action="/">
+      <button class="btn btn-default" type="submit" name="sleep">Sleep</button>
+    </form>
+  </div>
+</div>
+<br>
+<div class="row well bg-panel">
+  <br>
+  <h4>Food level: <%= @pet.food_level() %> </h4>
+  <h4>Sleep level: <%= @pet.sleep_level() %> </h4>
+  <h4>Activity level: <%= @pet.activity_level() %> </h4>
+  <h4>Time:<%= @pet.time() %> </h4>
+</div>
