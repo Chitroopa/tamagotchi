@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  width: 100%;
+}
+
+.bg-panel {
+  margin: 0 auto;
+  background-color: #bbf9d4;
+}
